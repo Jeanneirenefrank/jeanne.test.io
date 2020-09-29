@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			
+		</style>
+	</head>
+	<body>
+        <div class="container">
+        <button onclick="button(event)" .id="button">☾</button>
+		</div>
+        <footer>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+		</footer>
+        
+
+		<script src="script.js"></script>
+		<script>
+
+			function button(event){
+				document.querySelector(".container").innerHTML+= "<div class='thing' style='top:"+Math.random()*100+"vh; left:"+Math.random()*100+"vw;'>★</div>";
+				event.stopPropagation();
+			}
+
+		</script>
+	</body>
+</html>
